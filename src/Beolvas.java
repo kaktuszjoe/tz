@@ -37,9 +37,10 @@ public class Beolvas {
         List l = readFileInList(
             "berkft.txt");
  
-        Iterator<String> itr = l.iterator();
-        while (itr.hasNext())
-            System.out.println(itr.next());
+            for (Object i : l) {
+                i = i.toString();
+                i = i.split(":");
+              }
     }
 }
 
